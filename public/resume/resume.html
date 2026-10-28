@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monu Nagar - Full Stack Developer Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      color: #111827;
+      background-color: #f3f4f6;
+      line-height: 1.4;
+      font-size: 13px;
+      -webkit-font-smoothing: antialiased;
+    }
+    .page {
+      max-width: 820px;
+      margin: 20px auto;
+      background: #ffffff;
+      padding: 34px 44px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+      border-radius: 2px;
+    }
+    header {
+      border-bottom: 2px solid #111827;
+      padding-bottom: 10px;
+      margin-bottom: 14px;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #000000;
+      letter-spacing: -0.5px;
+      text-transform: uppercase;
+      margin-bottom: 3px;
+    }
+    .headline {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: #374151;
+      margin-bottom: 5px;
+    }
+    .contact-links {
+      font-size: 12.5px;
+      color: #4b5563;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+    .contact-links a {
+      color: #111827;
+      text-decoration: underline;
+      font-weight: 500;
+    }
+    .contact-sep {
+      color: #9ca3af;
+    }
+    section {
+      margin-bottom: 13px;
+    }
+    .section-title {
+      font-size: 12.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: #000000;
+      border-bottom: 1px solid #111827;
+      padding-bottom: 2px;
+      margin-bottom: 6px;
+    }
+    p.summary {
+      color: #1f2937;
+      text-align: justify;
+      font-size: 12.5px;
+      line-height: 1.45;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 3px 12px;
+      font-size: 12.5px;
+      line-height: 1.4;
+    }
+    .skills-category {
+      font-weight: 600;
+      color: #111827;
+      white-space: nowrap;
+    }
+    .skills-list {
+      color: #374151;
+    }
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+    .item-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: #000000;
+    }
+    .item-org {
+      font-weight: 600;
+      color: #111827;
+    }
+    .item-date {
+      font-size: 12px;
+      font-weight: 500;
+      color: #4b5563;
+      white-space: nowrap;
+    }
+    .item-subtitle {
+      font-size: 12px;
+      color: #4b5563;
+      margin-bottom: 3px;
+    }
+    .item-subtitle a {
+      color: #111827;
+      text-decoration: underline;
+      font-weight: 500;
+    }
+    ul.bullet-list {
+      margin-left: 16px;
+      margin-top: 3px;
+      margin-bottom: 8px;
+    }
+    ul.bullet-list li {
+      font-size: 12.2px;
+      color: #1f2937;
+      margin-bottom: 2.5px;
+      line-height: 1.4;
+    }
+    .edu-item {
+      margin-bottom: 4px;
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+        font-size: 11.5px;
+        line-height: 1.35;
+      }
+      .page {
+        margin: 0;
+        padding: 20px 28px;
+        box-shadow: none;
+        max-width: 100%;
+        border-radius: 0;
+      }
+      header {
+        margin-bottom: 10px;
+        padding-bottom: 6px;
+      }
+      h1 {
+        font-size: 21px;
+      }
+      .headline {
+        font-size: 13px;
+      }
+      section {
+        margin-bottom: 10px;
+      }
+      .section-title {
+        font-size: 11.5px;
+        margin-bottom: 5px;
+      }
+      ul.bullet-list li {
+        font-size: 11.2px;
+        margin-bottom: 2px;
+      }
+      p.summary, .skills-grid, .item-title, .item-date {
+        font-size: 11.2px;
+      }
+      a {
+        text-decoration: none;
+        color: #000000;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Monu Nagar</h1>
+      <div class="headline">Full Stack Developer (MERN) | React.js • Node.js • Express.js • REST APIs</div>
+      <div class="contact-links">
+        <span>+91 7240940633</span>
+        <span class="contact-sep">•</span>
+        <span>monunagar94066@gmail.com</span>
+        <span class="contact-sep">•</span>
+        <a href="https://www.linkedin.com/in/monu-nagar-a30a4b1a5" target="_blank" rel="noreferrer">linkedin.com/in/monu-nagar-a30a4b1a5</a>
+        <span class="contact-sep">•</span>
+        <a href="https://github.com/Monunagar11" target="_blank" rel="noreferrer">github.com/Monunagar11</a>
+        <span class="contact-sep">•</span>
+        <span>Indore, India</span>
+      </div>
+    </header>
+
+    <section>
+      <div class="section-title">Professional Summary</div>
+      <p class="summary">
+        Full-Stack Developer with hands-on experience building and shipping web applications across the MERN stack (MongoDB, Express.js, React.js, Node.js). Experienced in designing RESTful APIs with JWT authentication, connecting third-party services like Razorpay and Shiprocket, structuring MongoDB databases, and writing clean, responsive user interfaces for live client platforms.
+      </p>
+    </section>
+
+    <section>
+      <div class="section-title">Technical Skills</div>
+      <div class="skills-grid">
+        <div class="skills-category">Languages:</div>
+        <div class="skills-list">JavaScript (ES6+), TypeScript, Java (Core & OOP)</div>
+
+        <div class="skills-category">Frontend:</div>
+        <div class="skills-list">React.js, Redux Toolkit, Context API, HTML5, CSS3, Tailwind CSS, Bootstrap, Material UI</div>
+
+        <div class="skills-category">Backend & APIs:</div>
+        <div class="skills-list">Node.js, Express.js, RESTful API Architecture, JWT Authentication, OAuth 2.0, Firebase Cloud Messaging (FCM)</div>
+
+        <div class="skills-category">Databases:</div>
+        <div class="skills-list">MongoDB (Mongoose ODM), PostgreSQL, SQL</div>
+
+        <div class="skills-category">DevOps & Tools:</div>
+        <div class="skills-list">Git, GitHub, Docker (Fundamentals), Postman, Coolify, Vercel, Cloudinary</div>
+
+        <div class="skills-category">Core Concepts:</div>
+        <div class="skills-list">Object-Oriented Programming (OOP), Data Structures & Algorithms (DSA), Responsive UI/UX Design</div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Professional Experience</div>
+
+      <div class="item-header">
+        <div class="item-title">Full Stack Developer — <span class="item-org">DotShot Digital</span></div>
+        <div class="item-date">Jul 2026 – Present | Indore, India</div>
+      </div>
+      <ul class="bullet-list">
+        <li>Developed full-stack web features using React.js, TypeScript, Node.js, Express.js, and MongoDB.</li>
+        <li>Built reusable UI components with Tailwind CSS for client sites, keeping layouts responsive across mobile, tablet, and desktop.</li>
+        <li>Worked on backend services for the Settleezy client platform, building Express REST endpoints for user authentication, partner venue privileges, and offer redemptions.</li>
+        <li>Implemented QR-code verification logic for offer redemption workflows and integrated Firebase Cloud Messaging (FCM) for mobile push notifications.</li>
+        <li>Coordinated directly with Flutter mobile engineers to test endpoints and keep API request/response structures consistent.</li>
+      </ul>
+
+      <div class="item-header">
+        <div class="item-title">MERN Stack Developer Intern — <span class="item-org">Novarsistech PVT. LTD.</span></div>
+        <div class="item-date">Jun 2026 – Jul 2026 | Indore, India</div>
+      </div>
+      <ul class="bullet-list">
+        <li>Built full-stack features using React, Node.js, and MongoDB for internal and client projects.</li>
+        <li>Refactored React component trees and set up route-based code-splitting using <code>React.lazy</code> and <code>Suspense</code> to reduce initial bundle loading times.</li>
+        <li>Connected external services including Razorpay for checkout payments, Shiprocket for logistics tracking, and Resend for transactional emails.</li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="section-title">Selected Technical Projects</div>
+
+      <!-- Project 1: Eventique -->
+      <div class="item-header">
+        <div class="item-title">Eventique — Luxury Digital Invitations & Event Management</div>
+        <div class="item-date"><a href="https://eventiquedesign.in/" target="_blank" rel="noreferrer">eventiquedesign.in ↗</a></div>
+      </div>
+      <div class="item-subtitle">Tech Stack: React.js, Node.js, Express.js, MongoDB, Razorpay, Shiprocket, Resend Mail, Coolify</div>
+      <ul class="bullet-list">
+        <li>Built a full-stack e-commerce and digital stationery platform deployed live at eventiquedesign.in.</li>
+        <li>Wrote 25+ REST API routes for authentication (JWT and Google OAuth), shopping cart, orders, and inventory with centralized error-handling middleware.</li>
+        <li>Integrated Razorpay checkout with server-side HMAC-SHA256 signature verification to prevent fraudulent order status updates.</li>
+        <li>Automated customer email notifications for order placements and status updates using Resend Mail.</li>
+        <li>Built an admin dashboard with role-based access so the business team can manage stationery products, track orders, and view customer inquiries without touching the database.</li>
+      </ul>
+
+      <!-- Project 2: Settleezy Backend -->
+      <div class="item-header">
+        <div class="item-title">Settleezy — Core Backend Architecture & Micro-Services</div>
+        <div class="item-date">Production Client Backend</div>
+      </div>
+      <div class="item-subtitle">Tech Stack: Node.js, Express.js, MongoDB, Firebase Cloud Messaging (FCM), QR Verification</div>
+      <ul class="bullet-list">
+        <li>Engineered backend REST APIs with Node.js and Express to power partner privilege listings and user redemptions.</li>
+        <li>Wrote the server-side QR verification logic used at merchant counters to validate customer coupons.</li>
+        <li>Set up Firebase Cloud Messaging (FCM) to send push notifications when user privileges or account updates trigger.</li>
+        <li>Worked directly with Flutter frontend developers to test endpoints, document API schemas, and prevent breaking changes.</li>
+      </ul>
+
+      <!-- Project 3: DotShot Digital -->
+      <div class="item-header">
+        <div class="item-title">DotShot Digital — Agency Web Platform</div>
+        <div class="item-date"><a href="https://dotshotdigital.in/" target="_blank" rel="noreferrer">dotshotdigital.in ↗</a></div>
+      </div>
+      <div class="item-subtitle">Tech Stack: React.js, TypeScript, Node.js, Express.js, MongoDB</div>
+      <ul class="bullet-list">
+        <li>Built the official agency website (dotshotdigital.in) using React.js and TypeScript on the frontend and Node.js/Express on the backend.</li>
+        <li>Created backend endpoints to receive, validate, and store client project inquiries and lead forms in MongoDB.</li>
+        <li>Ensured clean mobile responsiveness, fast page loading, and semantic SEO tags across all agency service pages.</li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="section-title">Education</div>
+
+      <div class="edu-item">
+        <div class="item-header">
+          <div class="item-title">Master of Computer Applications (MCA) — <span class="item-org">SAGE University, Indore</span></div>
+          <div class="item-date">CGPA: 8.0 | 2024 – 2026</div>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <div class="item-header">
+          <div class="item-title">Bachelor of Computer Applications (BCA) — <span class="item-org">Royal Institute of Science and Arts, Ratlam</span></div>
+          <div class="item-date">Score: 83% | 2021 – 2024</div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
